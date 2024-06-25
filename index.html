@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviator Predictor</title>
+</head>
+<body>
+    <h1>Aviator Flight Time Predictor</h1>
+    <div>
+        <label for="inputTime">Input the last flight time:</label>
+        <input type="number" id="inputTime" step="0.01">
+        <button onclick="addFlightTime()">Add Flight Time</button>
+    </div>
+    <div>
+        <h2>Previous Flight Times:</h2>
+        <ul>
+            <li>Last: <span id="lastFlight">N/A</span></li>
+            <li>2nd Previous: <span id="secondFlight">N/A</span></li>
+            <li>3rd Previous: <span id="thirdFlight">N/A</span></li>
+        </ul>
+    </div>
+    <div>
+        <button onclick="calculateNextFlightTime()">Calculate Cashout</button>
+    </div>
+    <div>
+        <h2>Predicted Next Flight Time: <span id="predictedTime">N/A</span></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
